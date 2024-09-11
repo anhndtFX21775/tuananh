@@ -1,0 +1,680 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif, arial, sans-serif, tahoma;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  padding: 6em;
+  text-align: center;
+  background-image: url("../images/banner.jpg");
+  background-size: 100% 100%; /* Hình ảnh lấp đầy khung hình */
+  background-position: center; /* Căn giữa hình ảnh */
+  max-width: 100%;
+  height: 400px;
+  color: white;
+}
+
+header h1 {
+  font-size: 20px;
+}
+header h2 {
+  font-size: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  /* ap kiểu cho class cho ra giữa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav a {
+  border-style: none solid;
+  border-width: 1px;
+  border-color: rgb(218, 218, 218);
+  float: left;
+  color: #000000;
+  text-align: center;
+  font-weight: 400px;
+  padding: 6px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.Orientation {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Chia thành 2 cột bằng nhau */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.Orientationcolumn {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung khung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung khung theo chiều dọc */
+}
+
+.Orientationcolumn:last-child {
+  background-color: #dadada; /* Màu nền để dễ nhìn */
+}
+
+.Orientationbox {
+  width: 600px;
+  height: 300px;
+  word-wrap: break-word; /* Ngắt từ khi cần để tránh tràn ra ngoài */
+}
+
+.information {
+  column-count: 3;
+  column-gap: 10px;
+  width: 600px;
+  height: 300px;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.box-line {
+  height: 50px;
+  display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo chiều ngang */
+  justify-content: left; /* Khoảng cách đều giữa các hình tròn */
+  gap: 10px; /* Khoảng cách giữa các đường dài (tùy chọn) */
+  margin-top: 10px;
+}
+.long-line {
+  width: 60px; /* Độ dài của gạch (có thể là % hoặc px) */
+  height: 4px; /* Chiều cao của gạch */
+  background-color: #06b0ff; /* Màu của gạch */
+}
+.long-line2 {
+  width: 60px; /* Độ dài của gạch (có thể là % hoặc px) */
+  height: 4px; /* Chiều cao của gạch */
+  background-color: #b4b4b4; /* Màu của gạch */
+}
+.box-content li {
+  margin-top: 30px;
+}
+.box-content p {
+  color: rgb(0, 0, 0);
+}
+
+.custom-col {
+  height: 600px; /* Đặt kích thước cột là 600px */
+}
+
+.ic-toolbox {
+  font-size: 60px; /* Kích thước font chữ cho phần tử thứ hai */
+  color: #ddd;
+}
+.ic-pencil {
+  font-size: 60px; /* Kích thước font chữ cho phần tử thứ hai */
+  color: #ddd;
+}
+.ic-telescope {
+  font-size: 60px; /* Kích thước font chữ cho phần tử thứ hai */
+  color: #ddd;
+}
+.ic-mic {
+  font-size: 60px; /* Kích thước font chữ cho phần tử thứ hai */
+  color: #ddd;
+}
+.ic-tools-2 {
+  font-size: 60px; /* Kích thước font chữ cho phần tử thứ hai */
+  color: #ddd;
+}
+
+.box-circle {
+  display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo chiều ngang */
+  justify-content: space-around; /* Khoảng cách đều giữa các hình tròn */
+  align-items: center; /* Căn giữa các hình tròn theo chiều dọc */
+  gap: 2px; /* Khoảng cách giữa các hình tròn (tùy chọn) */
+  margin: 20px; /* Khoảng cách bên ngoài cho container */
+}
+.box-title2 {
+  display: flex;
+  flex-direction: column; /* Xếp các phần tử theo cột */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  margin-bottom: 20px; /* Khoảng cách dưới hình tròn */
+}
+.circle2 {
+  width: 40px; /* Đường kính của hình tròn */
+  height: 40px; /* Đường kính của hình tròn */
+  border-radius: 50%; /* Tạo hình tròn */
+  display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  background-color: #ffffff; /* Màu nền của hình tròn (tùy chọn) */
+  border: 2px solid #00a8f7; /* Viền cho hình tròn (tùy chọn) */
+  color: #00a8f7; /* Màu của icon (tùy chọn) */
+}
+.circle2 i {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  object-fit: cover; /* Đảm bảo hình ảnh phủ đầy hình tròn mà không bị biến dạng */
+  color: #00a8f7;
+}
+.col-8-bdcl {
+  border-bottom: 2px dotted #06b0ff;
+}
+
+.circle3 {
+  width: 50px; /* Đường kính của hình tròn */
+  height: 50px; /* Đường kính của hình tròn */
+  border-radius: 50%; /* Tạo hình tròn */
+  display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  background-color: #b74ffc; /* Màu nền của hình tròn (tùy chọn) */
+  border: 2px solid #978e8e; /* Viền cho hình tròn (tùy chọn) */
+  color: #a261ec; /* Màu của icon (tùy chọn) */
+}
+.circle3 p {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  object-fit: cover; /* Đảm bảo hình ảnh phủ đầy hình tròn mà không bị biến dạng */
+  color: #ffffff;
+}
+.box-title2 p {
+  margin-top: 10px; /* Khoảng cách giữa hình tròn và văn bản */
+  font-size: 14px; /* Kích thước chữ của thẻ <p> */
+  width: 80px;
+  color: #333; /* Màu chữ của thẻ <p> */
+  text-align: center; /* Căn giữa văn bản theo chiều ngang */
+}
+.text1 {
+  font-style: italic;
+}
+.img {
+  width: 200px;
+  height: 100px; /* Chiều cao của mỗi cột */
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+.spacing {
+  margin-left: 30px; /* Khoảng cách 50px giữa phần tử thứ nhất và phần tử thứ hai */
+}
+.ct-h1 {
+  margin-bottom: 30px;
+}
+.second-item {
+  margin-left: auto; /* Đẩy phần tử sang bên phải */
+}
+.border-bottom-orange {
+  border-bottom: 2px solid orange; /* Viền dưới màu cam */
+  margin-bottom: 20px;
+}
+.col-md-6 {
+  margin-bottom: 20px;
+}
+.col-md-6 p {
+  margin-top: 20px;
+}
+.border-right-orange {
+  border-right: 1px solid orange; /* Viền bên phải màu cam cho cột 1 */
+}
+.no-border-right {
+  border-right: none; /* Không có viền bên phải cho cột 2 */
+}
+.custom-bullets {
+  color: black; /* Màu chữ của các phần tử li */
+  height: auto;
+}
+.custom-bullets li::marker {
+  color: rgb(0, 207, 243); /* Màu của dấu chấm */
+  font-size: 20px;
+}
+.custom_container {
+  margin-top: 20px;
+}
+ul.custom-list {
+  list-style: none; /* Loại bỏ dấu chấm mặc định */
+}
+.container-wrapper {
+  background-color: #f0f0f0; /* Màu nền xám cho khoảng cách bên ngoài container */
+  padding: 15px; /* Khoảng cách giữa viền xám và container */
+}
+.container-gray-background {
+  background-color: #f0f0f0; /* Màu nền xám nhạt cho container */
+}
+.text-container img {
+  position: absolute;
+  top: 10px; /* Điều chỉnh vị trí hình ảnh */
+  left: 10px;
+  width: 100px; /* Kích thước hình ảnh */
+}
+.outer-col {
+  border: 2px solid #ddd;
+  padding: 10px;
+}
+.inner-col {
+  border-right: 1px solid rgb(230, 227, 227);
+  border-left: 1px solid rgb(230, 227, 227);
+  border-bottom: 1px solid rgb(230, 227, 227);
+}
+.col-bt-4 {
+  height: 170px; /* Đẩy xuống đáy */
+}
+.col-bt-5 {
+  height: 132px; /* Đẩy xuống đáy */
+}
+.col-bt-6 {
+  height: 70px; /* Đẩy xuống đáy */
+}
+.inner-col img {
+  width: 100%;
+  height: auto; /* Giữ tỷ lệ gốc của hình ảnh */
+}
+.box-content-project {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  display: flex;
+}
+.box-content-project p {
+  display: inline-block;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 10px; /* Thêm khoảng cách giữa các đoạn văn */
+}
+.round {
+  display: inline-block; /* Đảm bảo rằng span xử lý như một khối để có thể bo tròn */
+  padding: 0px 8px; /* Tạo padding để làm cho nội dung bên trong dễ nhìn hơn */
+  background-color: #4e62d3; /* Màu nền cho span */
+  color: white; /* Màu chữ */
+  border-radius: 20px; /* Bo tròn các góc */
+}
+.h4-layout {
+  margin-top: 12px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+footer {
+  height: 150px;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.centerspan {
+  justify-content: center;
+  display: grid; /* Sử dụng Grid Layout */
+  grid-template-columns: repeat(3, 50px); /* Tạo 4 cột có chiều rộng 150px */
+  gap: 120px;
+  align-items: center; /* Căn giữa các hộp theo chiều dọc */
+}
+.centerspanbox {
+  margin-top: 50px;
+  width: 50px; /* Chiều rộng của hộp */
+  height: 50px; /* Chiều cao của hộp */
+  border-radius: 10px; /* Bo tròn góc */
+  display: flex; /* Sử dụng Flexbox cho căn giữa nội dung bên trong */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  color: rgb(0, 0, 0); /* Màu chữ */
+  font-size: 18px; /* Kích thước chữ */
+}
+.centerspanbox span {
+  font-size: 50px;
+  color: #06b0ff;
+}
+
+input[type="email"] {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+  padding: 12px; /* Tạo khoảng cách bên trong ô input */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Đường viền của ô input */
+  border-radius: 5px; /* Bo tròn góc cho ô input */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước của input */
+  font-size: 18px; /* Kích thước chữ */
+}
+button[type="submit"] {
+  background-color: #0978df; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  padding: 5px 30px; /* Kích thước của nút */
+  border: none; /* Xóa đường viền */
+  border-radius: 5px; /* Bo tròn góc */
+  font-size: 14px; /* Kích thước chữ */
+  cursor: pointer; /* Thay đổi con trỏ thành dạng bàn tay */
+}
+button[type="submit"] {
+  background-color: #0978df; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  padding: 5px 30px; /* Kích thước của nút */
+  border: none; /* Xóa đường viền */
+  border-radius: 5px; /* Bo tròn góc */
+  font-size: 14px; /* Kích thước chữ */
+  cursor: pointer; /* Thay đổi con trỏ thành dạng bàn tay */
+}
+.ct-ct {
+  border-top: 20px solid #0d6efd; /* Viền trên dày 20px, màu đen */
+  border-left: 20px solid #0d6efd; /* Viền trái dày 20px, màu đen */
+  border-right: 20px solid #0d6efd; /* Viền phải dày 20px, màu đen */
+  border-bottom: 20px solid #0d6efd; /* Viền phải dày 20px, màu đen */
+}
+.col-8 p {
+  margin: 0px;
+}
+.ct-cl-bd {
+  background-color: #eeffff;
+  border: 6px solid #0d6efd; /* Đặt viền màu đen */
+  height: 450px;
+}
+
+.ct-cl-bd1 {
+  background-color: #eeffff;
+  border: 6px solid #0d6efd; /* Đặt viền màu đen */
+  height: 900px;
+}
+
+.text-primary {
+  border-bottom: 1px solid #000000; /* Đặt viền màu đen */
+}
+.bd-row2 {
+  margin-right: 1px;
+  margin-left: 1px;
+  border-bottom: 1px solid #c0bcbc; /* Đặt viền màu đen */
+  justify-content: center;
+}
+.bd-row3 {
+  justify-content: center;
+}
+.bd-row4 {
+  justify-content: center;
+}
+
+.row-gap {
+  gap: 20px; /* Khoảng cách giữa các cột là 20px */
+}
+.row-img {
+  margin-top: 10px;
+  height: 40px;
+}
+#result {
+  display: none;
+}
+#kn1 {
+  display: none;
+}
+#hv1 {
+  display: none;
+}
+#hd1 {
+  display: none;
+}
+#st1 {
+  display: none;
+}
+#nn1 {
+  display: none;
+}
+#kyn1 {
+  display: none;
+}
+
+.knopen:hover {
+  color: #b4b4b4;
+  box-shadow: 0.2em 0.2em 0.2em;
+}
+.knopen button {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  padding: 2px 15px;
+  font-size: 14px;
+  background-color: #fffb00;
+  border-radius: 10px;
+  animation: moveUp 0.5s forwards;
+}
+
+.knopen:hover button {
+  display: block;
+}
+.knopen span {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.autolayout {
+  height: auto;
+}
+
+@keyframes moveUp {
+  0% {
+    top: 140px;
+  }
+  100% {
+    top: 120px; /* Nút di chuyển lên 10px */
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1389px) {
+  .box-circle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Khoảng cách giữa các div */
+  }
+  .custom-col {
+    height: 700px;
+  }
+  .Orientationbox {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .topnav {
+    display: block;
+    background-color: #ffffff;
+  }
+  .topnav a {
+    color: #020202;
+    border-style: none;
+    font-size: 17px;
+    padding: 4px 50px;
+  }
+  .Orientationbox {
+    width: 300px;
+    height: 300px;
+  }
+
+  .col-sm-9,
+  .col-8,
+  .col-sm-8 {
+    width: 100%; /* Chuyển cột thành 100% chiều rộng khi màn hình nhỏ hơn 768px */
+    display: block;
+    height: auto;
+  }
+  .col-4 {
+    justify-content: center;
+  }
+  .ct-cl-bd {
+    width: 100%;
+    height: auto;
+  }
+  .ct-cl-bd1 {
+    width: 100%;
+    height: auto;
+  }
+  .custom-col {
+    height: auto;
+  }
+  .box-circle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Khoảng cách giữa các div */
+  }
+  .img {
+    width: 300px;
+    height: 150px; /* Chiều cao của mỗi cột */
+    color: rgb(0, 0, 0);
+    display: flex;
+  }
+  .column {
+    padding: 15px;
+    margin: 5px;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+.ct-cod-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+.ct-cod-md-6 p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+  .topnav {
+    display: block;
+    background-color: #ffffff;
+  }
+  .Orientation {
+    grid-template-columns: 1fr;
+  }
+  .topnav a {
+    color: #020202;
+    border-style: none;
+    font-size: 17px;
+    padding: 10px 100px;
+  }
+  .Orientationbox {
+    width: 300px;
+    height: 300px;
+  }
+  .col-sm-9,
+  .col-8,
+  .col-sm-8 {
+    width: 100%; /* Chuyển cột thành 100% chiều rộng khi màn hình nhỏ hơn 768px */
+    display: block;
+    height: auto;
+  }
+  .col-4 {
+    justify-content: center;
+  }
+  .ct-cl-bd {
+    width: 100%;
+    height: auto;
+  }
+  .ct-cl-bd1 {
+    width: 100%;
+    height: auto;
+  }
+  .custom-col {
+    height: auto;
+  }
+  .box-circle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Khoảng cách giữa các div */
+  }
+  .column {
+    background-color: lightgray;
+    padding: 15px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 769px) {
+  .topnav {
+    display: block;
+    background-color: #ffffff;
+  }
+  .topnav a {
+    color: #020202;
+    border-style: none;
+    font-weight: 800px;
+    font-size: 20px;
+    padding: 6px 100px;
+  }
+  .Orientation {
+    grid-template-columns: 1fr;
+  }
+  .Orientationbox {
+    width: 400px;
+    height: auto;
+  }
+  .col-sm-9,
+  .col-8,
+  .col-sm-8 {
+    width: 100%; /* Chuyển cột thành 100% chiều rộng khi màn hình nhỏ hơn 768px */
+    display: block;
+    height: auto;
+  }
+  .col-4 {
+    justify-content: center;
+  }
+  .ct-cl-bd {
+    width: 100%;
+    height: auto;
+  }
+  .ct-cl-bd1 {
+    width: 100%;
+    height: auto;
+  }
+  .custom-col {
+    height: auto;
+  }
+  .box-circle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px; /* Khoảng cách giữa các div */
+  }
+  .border-right-orange {
+    border: none;
+  }
+  .border-bottom-orange1 {
+    border-bottom: 2px solid orange; /* Viền dưới màu cam */
+  }
+  .img {
+    width: 300px;
+    height: 170px; /* Chiều cao của mỗi cột */
+    color: rgb(0, 0, 0);
+    display: flex;
+  }
+  .centerspan {
+    justify-content: center;
+    display: grid; /* Sử dụng Grid Layout */
+    grid-template-columns: repeat(3, 50px); /* Tạo 4 cột có chiều rộng 150px */
+    gap: 100px;
+    align-items: center; /* Căn giữa các hộp theo chiều dọc */
+  }
+  .centerspanbox {
+    margin-top: 30px;
+    width: 30px; /* Chiều rộng của hộp */
+    height: 30px; /* Chiều cao của hộp */
+    border-radius: 10px; /* Bo tròn góc */
+    display: flex; /* Sử dụng Flexbox cho căn giữa nội dung bên trong */
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    color: rgb(0, 0, 0); /* Màu chữ */
+    font-size: 14px; /* Kích thước chữ */
+  }
+  .centerspanbox span {
+    font-size: 30px;
+    color: #06b0ff;
+  }
+}
